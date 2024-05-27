@@ -77,11 +77,7 @@ onMounted( () => {
 
 .pagination {
   display: flex;
-  /* justify-content: space-between; */
-  /* width: 100%; */
   width: 290px;
-  /* max-width: 300px; */
-  /* margin: 0 auto; */
 }
 
 .pagination a {
