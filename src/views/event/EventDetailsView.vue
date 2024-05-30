@@ -29,6 +29,19 @@ onMounted(async () => {
 <template>
   <div class="event-details" v-if="_error === null && event">
     <h1>{{ event.title }}</h1>
+    <div id="nav">
+      <router-link :to="{ name: 'event-details', params: { id } }"
+        >Details</router-link
+      >
+      |
+      <router-link :to="{ name: 'event-register', params: { id } }"
+        >Register</router-link
+      >
+      |
+      <router-link :to="{ name: 'event-edit', params: { id } }"
+        >Edit</router-link
+      >
+    </div>
     <p>{{ event.description }}</p>
     <span>@{{ event.time }} on {{ event.date }} @ {{ event.location }}</span>
   </div>
